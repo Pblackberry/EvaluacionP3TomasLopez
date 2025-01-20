@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EvaluacionP3TomasLopez.ViewModelsTLopez
 {
-    internal class CambiosViewModel : INotifyPropertyChanged
+    public class CambiosViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
         protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "", Action onChanged = null)
@@ -31,5 +31,5 @@ namespace EvaluacionP3TomasLopez.ViewModelsTLopez
             changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
-}
+
 }
