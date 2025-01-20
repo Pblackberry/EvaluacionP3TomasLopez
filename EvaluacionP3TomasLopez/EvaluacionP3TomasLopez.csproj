@@ -66,10 +66,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ViewModelsTLopez\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="ViewsTLopez\PaginaBusqueda.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
