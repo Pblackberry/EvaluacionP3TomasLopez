@@ -7,9 +7,14 @@
             InitializeComponent();
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
+        public static string DatabasePath
         {
-            return new Window(new AppShell());
+            get
+            {
+                var dbpath = Path.Combine(FileSystem.AppDataDirectory, "ExamenDBTomasLopez.db3");
+                return dbpath;
+            }
         }
+       
     }
 }
