@@ -13,7 +13,9 @@
                             <StackLayout Orientation="Vertical" Padding="10">
                                 <Label Text="{Binding Name}" FontSize="24"/>
                                 <Label Text="{Binding Region}" FontSize="18" TextColor="Gray"/>
+                                <Label Text="{Binding TLopez}" FontSize="18" TextColor="Gray"/>
                                 <Label Text="{Binding Maps}" FontSize="14" TextColor="Blue"/>
+                                
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
