@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace EvaluacionP3TomasLopez.ModelsTLopez
 {
-    internal class PaisDB
+    [Table("Paises")]
+    public class PaisDB
     {
+        [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string Name { get; set; }
         public string Region { get; set; }

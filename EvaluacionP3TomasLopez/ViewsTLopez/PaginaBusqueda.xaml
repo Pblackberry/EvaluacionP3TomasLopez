@@ -4,9 +4,7 @@
              x:Class="EvaluacionP3TomasLopez.ViewsTLopez.PaginaBusqueda"
              Title="PaginaBusqueda">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Entry x:Name="PaisFront" Placeholder="Ingrese el pais"/>
+        <Button Text="Buscar" Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
