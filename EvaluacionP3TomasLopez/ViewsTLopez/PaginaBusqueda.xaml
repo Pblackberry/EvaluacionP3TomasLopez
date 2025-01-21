@@ -4,7 +4,25 @@
              x:Class="EvaluacionP3TomasLopez.ViewsTLopez.PaginaBusqueda"
              Title="PaginaBusqueda">
     <VerticalStackLayout>
-        <Entry x:Name="PaisFront" Placeholder="Ingrese el pais"/>
-        <Button Text="Buscar" Clicked="Button_Clicked"/>
+        <Entry x:Name="PaisFront" Placeholder="Ingrese el pais" HorizontalOptions="Center"/>
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Text="Buscar" Clicked="Button_Clicked" HorizontalOptions="Center" WidthRequest="200"/>
+            <Button Text="Limpiar" Clicked="Button_Clicked_1" HorizontalOptions="Center" WidthRequest="200"/>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout>
+            <Label Text="Nombre del pais: "/>
+            <Label Text="{Binding Name}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="Region del pais: "/>
+            <Label Text="{Binding Region}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="Link de GoogleMaps: "/>
+            <Label Text="{Binding Maps}"/>
+        </HorizontalStackLayout>
+        
+        
     </VerticalStackLayout>
 </ContentPage>

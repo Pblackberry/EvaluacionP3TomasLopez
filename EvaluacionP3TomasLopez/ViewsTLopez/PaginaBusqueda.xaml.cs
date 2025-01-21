@@ -1,3 +1,4 @@
+using EvaluacionP3TomasLopez.ModelsTLopez;
 using System.Collections.ObjectModel;
 
 namespace EvaluacionP3TomasLopez.ViewsTLopez;
@@ -20,8 +21,23 @@ public partial class PaginaBusqueda : ContentPage
 		string paisBusqueda = PaisFront.Text;
 		var paisesList=(await _paisApiRepository.DevuelvePaisAsync(paisBusqueda)).ToList();
 		var paisEncontrado=paisesList.FirstOrDefault();
-		if (paisEncontrado != null) { 
-			
+		if (paisEncontrado != null) {
+			var paisGuardar = new PaisDB
+			{
+				Name = paisEncontrado.Name.Official,
+				Region = paisEncontrado.Region,
+				Maps = paisEncontrado.Maps.GoogleMaps,
+				TLopez = "TLopez"
+
+			};
+
+			await _basePaises.GuardarPais(paisGuardar);
+			BindingContext=paisGuardar;
 		}
+    }
+
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
+		PaisFront.Text=null;
     }
 }
