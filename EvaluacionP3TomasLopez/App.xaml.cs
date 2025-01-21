@@ -7,7 +7,7 @@ namespace EvaluacionP3TomasLopez
         public App()
         {
             InitializeComponent();
-            MainPage = new PaginaBusqueda();
+            MainPage = new AppShell();
         }
        
     }

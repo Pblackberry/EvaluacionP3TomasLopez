@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace EvaluacionP3TomasLopez.ViewModelsTLopez
 {
-    public class PaginaBusquedaViewModel : CambiosViewModel
+    public class PaginaBusquedaViewModel 
     {
         //public event Action onGuardarPais;
         //private string _namePais;

@@ -17,8 +17,10 @@ namespace EvaluacionP3TomasLopez
             conn.CreateTableAsync<PaisDB>().Wait();
         }
 
+
         public Task<List<PaisDB>> GetAllPaises()
         {
+
             return conn.Table<PaisDB>().ToListAsync();
         }
 
