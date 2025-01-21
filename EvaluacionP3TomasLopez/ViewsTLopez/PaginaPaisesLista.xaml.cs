@@ -26,5 +26,7 @@ public partial class PaginaPaisesLista : ContentPage
 		BindingContext = this;
     }
 
-	
+    public ObservableCollection<PaisDB> Paises { get { return paises; } set { paises = value; } }
+
+
 }
